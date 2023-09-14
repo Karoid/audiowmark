@@ -1,0 +1,12 @@
+FROM archlinux
+
+RUN pacman -Syu --noconfirm
+RUN pacman -S --noconfirm \
+    gcc clang make automake autoconf pkg-config \
+    libsndfile mpg123 zita-resampler fftw autoconf-archive \
+    ffmpeg
+
+ADD . /audiowmark
+WORKDIR /audiowmark
+
+RUN misc/build.sh

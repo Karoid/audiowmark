@@ -1,0 +1,14 @@
+*.o
+.deps/
+.libs/
+test/
+audiowmark
+testconvcode
+testmp3
+testrandom
+teststream
+testlimiter
+testhls
+testmpegts
+testshortcode
+testthreadpool
